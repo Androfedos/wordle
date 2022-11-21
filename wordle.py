@@ -11,6 +11,7 @@ class MyWidget(QMainWindow):
         super().__init__()
         uic.loadUi('wordleGUI.ui', self)
         self.addButton.clicked.connect(self.add_word)
+        self.setWindowTitle('Wordle')
         self.step = 0
         spisok = ["ангел", "понос","лодка","остов","кошка","химия","физик","совет","свеча","поток","пенал","бебра","ножны","бобёр","живот","ложка","отдел","право","устой","обувь", ]
         self.zagadka = spisok[random.randint(0, len(spisok) - 1)]
@@ -65,10 +66,10 @@ class MyWidget(QMainWindow):
         for ind, char in enumerate(word):
             if char.lower() in self.zagadka:
                 if char.lower() == self.zagadka[ind]:
-                    eval("""self.letterbutton_{0}.setStyleSheet("background-color: yellow; font: 75 22pt 'MS Shell Dlg 2'")""".format(self.step * 5 + ind + 1))
+                    eval("""self.letterbutton_{0}.setStyleSheet("background-color: yellow; font: 75 22pt 'MS Shell Dlg 2'; color: black")""".format(self.step * 5 + ind + 1))
                     eval("self.letterbutton_{0}.setText(char.upper())".format((self.step * 5 + ind + 1)))
                 else:
-                    eval("""self.letterbutton_{0}.setStyleSheet("background-color: lime; font: 75 22pt 'MS Shell Dlg 2'")""".format(self.step * 5 + ind + 1))
+                    eval("""self.letterbutton_{0}.setStyleSheet("background-color: lime; font: 75 22pt 'MS Shell Dlg 2'; color: black")""".format(self.step * 5 + ind + 1))
                     eval("self.letterbutton_{0}.setText(char.upper())".format((self.step * 5 + ind + 1)))
             else:
                 eval("""self.letterbutton_{0}.setStyleSheet("background-color: gray; font: 75 22pt 'MS Shell Dlg 2'; color: white")""".format(self.step * 5 + ind + 1))
