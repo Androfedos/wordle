@@ -14,7 +14,7 @@
 
 У вас только 6 попыток!
 
-![image](https://user-images.githubusercontent.com/99863699/203043319-9bd8d9ab-122f-423f-9ac3-d6594ecb4d99.png)
+![image](https://user-images.githubusercontent.com/99863699/203044403-bfeb8de2-a2dd-40f8-aad5-b8c1948a063b.png)
 
 
 ### Инструкция по установке:
