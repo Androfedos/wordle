@@ -21,6 +21,6 @@ pip install PyQt5
 pip install pymorphy2 
 ```
 
-3.Запустите файл wordle.py
+3. Запустите файл wordle.py
 
 4. Наслаждайтесь игрой!
