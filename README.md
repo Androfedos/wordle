@@ -10,8 +10,8 @@
 
 Инструкция по установке:
 Перенесите все файлы игры в одну папку 
-Установите библиотеки PyQt5 и pymorphy2:/n
-pip install PyQt5/n
-pip install pymorphy2/n
+Установите библиотеки PyQt5 и pymorphy2: /n \n
+pip install PyQt5
+pip install pymorphy2 
 Запустите файл wordle.py
 
